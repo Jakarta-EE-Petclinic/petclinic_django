@@ -2,7 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 
-from .models import Question, Choice
+from .models import Question, Choice, Owner, PetType, Specialty, Pet, Vet, Visit
 
 
 class ChoiceInline(admin.TabularInline):
@@ -23,3 +23,14 @@ class QuestionAdmin(admin.ModelAdmin):
 
 admin.site.register(Question, QuestionAdmin)
 
+admin.site.register(Specialty)
+
+admin.site.register(PetType)
+
+admin.site.register(Owner)
+
+admin.site.register(Pet)
+
+admin.site.register(Vet)
+
+admin.site.register(Visit)
